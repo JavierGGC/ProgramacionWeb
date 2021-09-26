@@ -1,0 +1,25 @@
+﻿@model Unidad1Actividad2.Models.PaginaPromediosViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Promedios</h1>
+<body>
+    <h1>Resultado de promedios</h1>
+
+    <form method="post" action="~/Home/Index">
+        <label>Promedio 1:</label>
+        <input type="number" name="Promedio1" value="@Model.Promedio1" /><br />
+        <label>Promedio 2:</label>
+        <input type="number" name="Promedio2" value="@Model.Promedio2" /><br />
+        <label>Promedio 3:</label>
+        <input type="number" name="Promedio3" value="@Model.Promedio3" /><br />
+
+        <input type="submit" value="Promediar"/>
+
+        <label>Promedio Total:</label>
+        <input type="number" readonly value="@Model.Prom" />
+        
+        <label>@Model.Aprobado</label>
+    </form>
+</body>
