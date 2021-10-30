@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ZooPlanet.Models.ViewModels.EspeciesViewModel>
+@{
+    Layout = "_Layout";
+}
+
+<h1>
+    Vertebrados según su clase
+</h1>
+
+<div class="listaClases">
+
+    <table>
+        @foreach (var c in Model)
+        {
+            <tr>
+
+                <th id="">@c.NombreEspecie</th>
+
+
+                <td>
+
+                    <ul>
+                        @foreach (var cc in c.Especies)
+                        {
+                            <li>
+                                <img src="~/especies/@(cc.Id).jpg" />
+                                <h2>@cc.Especie</h2>
+                                <p><label>Habitat: </label>@cc.Habitat</p>
+                                <p><label>Peso: </label>@cc.Peso</p>
+                                <p><label>Tamaño: </label>@cc.Tamaño</p>
+                                <p>@cc.Observaciones</p>
+                            </li>
+
+                        }
+                    </ul>
+                </td>
+
+
+                
+
+            </tr>
+        }
+            <tr>
+            </tr>
+        </table>
+</div>

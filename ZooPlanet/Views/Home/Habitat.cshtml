@@ -1,0 +1,43 @@
+﻿@model ZooPlanet.Models.ViewModels.HabitatViewModel
+@{
+    Layout = "_Layout";
+}
+
+<h1>
+    Vertebrados según su habitat
+</h1>
+
+@foreach (var h in Model.Habitats.ToList())
+{
+<div class="listaHabitat">
+
+    <h1 id="">@h.Habitat</h1>
+
+    @foreach (var hh in Model.Especies.ToList())
+    {
+        if (hh.Habitat == h.Habitat)
+        {
+            <ul>
+
+
+                <li>
+                    <img src="~/especies/@(hh.Id).jpg" />
+                    <h2></h2>
+                    <p><label>Clase: </label><a href="clases.htm#Aves">@hh.IdClaseNavigation.Nombre</a></p>
+                    <p><label>Peso: </label>@hh.Peso</p>
+                    <p><label>Tamaño: </label>@hh.Tamaño</p>
+                    <p>@hh.Observaciones</p>
+                </li>
+
+
+            </ul>
+        }
+
+
+
+
+    
+    }
+
+</div>
+}

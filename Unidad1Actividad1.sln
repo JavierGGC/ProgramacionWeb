@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unidad1Actividad1", "Unidad1Actividad1\Unidad1Actividad1.csproj", "{47F4EE71-0DDB-40E9-A87B-12211B67C9E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidad1Actividad2", "Unidad1Actividad2\Unidad1Actividad2.csproj", "{51CCC87A-C656-47FC-AAE6-B68D833D04DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unidad1Actividad2", "Unidad1Actividad2\Unidad1Actividad2.csproj", "{51CCC87A-C656-47FC-AAE6-B68D833D04DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unidad2", "Unidad2", "{44A2EB5F-01A6-4BE0-8013-155087006B37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooPlanet", "ZooPlanet\ZooPlanet.csproj", "{E2C0EE49-9BF3-4FC9-BD10-370079E8300D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{51CCC87A-C656-47FC-AAE6-B68D833D04DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51CCC87A-C656-47FC-AAE6-B68D833D04DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51CCC87A-C656-47FC-AAE6-B68D833D04DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C0EE49-9BF3-4FC9-BD10-370079E8300D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C0EE49-9BF3-4FC9-BD10-370079E8300D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C0EE49-9BF3-4FC9-BD10-370079E8300D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C0EE49-9BF3-4FC9-BD10-370079E8300D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2C0EE49-9BF3-4FC9-BD10-370079E8300D} = {44A2EB5F-01A6-4BE0-8013-155087006B37}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF2A78FF-6531-4A24-A44A-AAB28684028F}
